@@ -1,0 +1,309 @@
+{
+    "id": 1,
+    "name": "Nuno Salvador",
+    "username": "iruleonu",
+    "profileImageUrl": "https://avatars3.githubusercontent.com/u/654697?s=400&v=4",
+    "overview": "Senior iOS developer with 5+ years of commercial startup/agency experience on the field. Over these years I’ve been exposed to several projects with distinct varieties that taught me how to create eye appealing mobile applications while maintaining a clean architecture with enough flexibility to easily allow addition of new features and interact very quickly around them. Worked with a diversity of personalities, customers and end-users and have played a key role in all the projects I’ve been involved, providing vital input to project planning, UX/UI discussions, indoctrinate good software development practices and encourage the use of continuous delivery within my team. Clean core values, processes and team collaboration are the main ingredients to ensure a high standard process, top tier architecture and elegant applications.",
+    "techSkills": [
+        {
+            "id": 1,
+            "name": "Objective-C",
+            "score": 5
+        },
+        {
+            "id": 2,
+            "name": "Swift",
+            "score": 5
+        },
+        {
+            "id": 3,
+            "name": "ReactiveSwift",
+            "score": 5
+        },
+        {
+            "id": 4,
+            "name": "RxSwift",
+            "score": 5
+        },
+        {
+            "id": 5,
+            "name": "MVVM",
+            "score": 5
+        },
+        {
+            "id": 6,
+            "name": "Coordinators",
+            "score": 5
+        },
+        {
+            "id": 7,
+            "name": "VIPER",
+            "score": 5
+        },
+        {
+            "id": 8,
+            "name": "RIBs",
+            "score": 5
+        },
+        {
+            "id": 9,
+            "name": "CoreData",
+            "score": 5
+        },
+        {
+            "id": 10,
+            "name": "Realm",
+            "score": 5
+        },
+        {
+            "id": 11,
+            "name": "CouchDB",
+            "score": 5
+        },
+        {
+            "id": 12,
+            "name": "CocoaPods",
+            "score": 5
+        },
+        {
+            "id": 13,
+            "name": "Carthage",
+            "score": 5
+        },
+        {
+            "id": 14,
+            "name": "Git",
+            "score": 5
+        },
+        {
+            "id": 15,
+            "name": "TBD",
+            "score": 5
+        },
+        {
+            "id": 16,
+            "name": "Git",
+            "score": 5
+        },
+        {
+            "id": 17,
+            "name": "Gitflow",
+            "score": 5
+        },
+        {
+            "id": 18,
+            "name": "Jenkins",
+            "score": 5
+        },
+        {
+            "id": 19,
+            "name": "Travis",
+            "score": 5
+        },
+        {
+            "id": 20,
+            "name": "Greenhouse",
+            "score": 5
+        },
+        {
+            "id": 21,
+            "name": "Nevercode",
+            "score": 5
+        },
+        {
+            "id": 22,
+            "name": "Gitlab",
+            "score": 5
+        },
+        {
+            "id": 23,
+            "name": "HockeyApp",
+            "score": 5
+        },
+        {
+            "id": 24,
+            "name": "Fastlane",
+            "score": 5
+        },
+        {
+            "id": 25,
+            "name": "Quick",
+            "score": 5
+        },
+        {
+            "id": 26,
+            "name": "Nimble",
+            "score": 5
+        },
+        {
+            "id": 27,
+            "name": "SwiftyMocky",
+            "score": 5
+        },
+        {
+            "id": 28,
+            "name": "Sorcery",
+            "score": 5
+        },
+        {
+            "id": 29,
+            "name": "AsyncDisplayKit",
+            "score": 5
+        },
+        {
+            "id": 30,
+            "name": "Texture",
+            "score": 5
+        },
+        {
+            "id": 31,
+            "name": "GraphQL",
+            "score": 5
+        },
+        {
+            "id": 32,
+            "name": "AFNetworking",
+            "score": 5
+        },
+        {
+            "id": 33,
+            "name": "NSURLSession",
+            "score": 5
+        },
+        {
+            "id": 34,
+            "name": "Siesta",
+            "score": 5
+        },
+        {
+            "id": 35,
+            "name": "Apollo",
+            "score": 5
+        },
+        {
+            "id": 36,
+            "name": "SwiftLint",
+            "score": 5
+        },
+        {
+            "id": 37,
+            "name": "SAMKeychain",
+            "score": 5
+        },
+        {
+            "id": 38,
+            "name": "SwiftKeychainWrapper",
+            "score": 5
+        },
+        {
+            "id": 39,
+            "name": "SwiftyBeaver",
+            "score": 5
+        },
+        {
+            "id": 40,
+            "name": "Lotty",
+            "score": 5
+        },
+        {
+            "id": 41,
+            "name": "Apple Pay",
+            "score": 5
+        },
+        {
+            "id": 42,
+            "name": "MangoPay",
+            "score": 5
+        },
+        {
+            "id": 43,
+            "name": "Stripe",
+            "score": 5
+        },
+        {
+            "id": 44,
+            "name": "CardIO",
+            "score": 5
+        },
+        {
+            "id": 45,
+            "name": "Fabric",
+            "score": 5
+        },
+        {
+            "id": 46,
+            "name": "Firebase",
+            "score": 5
+        },
+        {
+            "id": 47,
+            "name": "Appsee",
+            "score": 5
+        },
+    ],
+    "workExperience": [
+        {
+            "id": 7,
+            "companyName": "Farmdrop",
+            "companyLocation": "London, United Kingdom",
+            "role": "Senior iOS Developer",
+            "startDate": "03-2016",
+            "endDate": "Present",
+            "jobDescription": "Project started all in Objective-C and has been gradually being converted to Swift.\nIncorporated a FRP framework (ReactiveSwift) and started use of MVVM and Coordinators alongside with it.\nAsyncDisplayKit/Texture for the needed smoothness and performant UI on content heavy screens.\n\nRealm for spotlight search, CouchDB for the cart orders system.\nWidget and Siri integration.\nExtracted app code into own dedicated modules as frameworks. Useful for the widget (a widget is treated as an another app) and useful to get a quicker feedback on build/tests pipeline.\nDependencies manager - Switched from Cocoapods to carthage after splitting app into smaller dedicated modules to take advantage of CI system cache (gitlab) with the compiled frameworks to end with a faster feedback from the build/test custom pipeline.\nSerialisation/deserialization - Switched from high performance model framework YYModel to the new pure Swift JSONConverter.\nClient-side cache of observable models for RESTful resources by using Siesta.\nGraphQL for the new services extracted from the monolith.\nSnapshot tests (using uber/ios-snapshot-test-case) for each reusable component on the ‘Farmdrop Interface Guidelines’.\n\nInitially the App was develop by a outsourcing company and because the app was relatively new and there was no in-house iOS developers, there was no development process whatsoever on the iOS side. QA team had no way to test the app unless they made a build themselves on their laptop or ask for a compiled build on their device and UI elements were discussed and being sent by Slack. Used my expertise to establish a iOS development process and encourage a cross functional collaboration from all the teams in order to create a better product. Just the setup included:\nIdentify and resolve critical issues affecting the production app.\nPlan out the first refactor to a new architecture and designing reusable components.\nDraw a plan of what’s going to be required to have development eco system for the iOS app. This included a CI/CD system with defined release cycles so that the QA team could start testing without having to do a build themselves on their laptop.\nSuggest the creation of a Farmdrop style guide where we could be up to date with all eventual design changes and update the app accordingly.\n\nThroughout my time, I’ve been deeply involved in all the areas required to build a top tier app that has been featured multiple times in the App Store.\n\nWorked closely with management, backend, UX/design and QA teams to discuss new or different strategies to improve user engagement and increase average order value and regularly deliver new releases. Then we would define a release plan according to the company roadmap, overall background support architecture and implementation with features in a timely matter, with enough flexibly to support easy/fast without the critical order making system when implemented news changes doing this pivoting experiments.\n\nContinuously improved our CI/CD system process and pipelines speed.\n\nContributed to try new Agile processes, methodologies and experiments (sprint to kanban, gitflow as a branching model to trunk based development with feature flags), sit-downs instead of stand-ups, hackdays, tech debt weeks, etc.",
+        },
+        {
+            "id": 6,
+            "companyName": "Locassa",
+            "companyLocation": "London, United Kingdom",
+            "role": "iOS Developer",
+            "startDate": "02-2015",
+            "endDate": "02-2016",
+            "jobDescription": "Joined a digital agency and worked with Management, design and QA team members to deliver apps that people wants to talk about. Worked for multiple client projects of diverse size/complexity and took charge of internal projects to improve/create reusable frameworks for accelerating initial app builds. Also contributed to improve our Kanban and Agile process as well on our developer, design and QA teams connection and inducting new starters.\n\nStarted as an iOS developer and was assigned as the iOS project lead after our team grew. I was deeply involved on all phases of the development lifecycle.\nAfter being involved in client meetings for requirements gathering, spent time coordinating with UX/UI designers, PMs to define requirements for each layer of the each project to have a pre-sprint planning strategy, define requirements for the backend team and our mobile team and consequent sprint planning definitions after ensuring that designs were in compliance with specifications. Hands on and lead the on going projects such as:\nMinted - (iOS and Android) Meet up with people to exchange different currencies.\nInkvite - Write short stories in cooperation with the community.\nCeliac - Helps the user find suitable venues while out and about.\nSessionBand - Award-winning music app which lets you create pro-quality music in minutes using precision-cut, chord-based loops.\nZiferblat - “Anti-café” chain where customers pay per minute for the time spent in the venue. iOS team lead from the ground up.\nCampus Society - Social app that breaks down the barriers between university students worldwide. iOS team lead from the ground up.\nCampaign for Real Ale (CAMRA) - Voluntary consumer organisation that promotes real ale. iOS team lead from the ground up.",
+        },
+        {
+            "id": 5,
+            "companyName": "CCG - Centro de Computação Gráfica",
+            "companyLocation": "Campus de Azurém, Universidade do Minho, Guimarães, Portugal",
+            "role": "Mobile Developer",
+            "startDate": "02-2013",
+            "endDate": "12-2014",
+            "jobDescription": "Implementation of the Android app for the project ‘Muralhas Digital’, funded by the ‘European Regional Development Fund’ (ERDF) for a Trans-border Cooperation Program Between Spain and Portugal.\nThe Ideia of the app was to help tourists and tour guides providing information and geolocation of their points of interest and be informed about the current and future events and. The cities involved: Melgaço, Monção, Valencia (Portugal) and Lugo and Santiago de Compostela (Spain).\nThe project was started and completed by me so I was involved on all the phases of the project to convert specifications and concepts into functionalities for the app. Design of the navigation paradigm, graphic interface, structure of the internal database and external (backoffice), deserialization of the dynamic content from the webservice and content download management system.",
+        },
+        {
+            "id": 4,
+            "companyName": "Marvel Apps, LLC",
+            "companyLocation": "Detroit, USA (remote through elance)",
+            "role": "iOS and macOS Developer",
+            "startDate": "10-2013",
+            "endDate": "02-2012",
+            "jobDescription": "Application for iOS and OSX devices, (available on the Mac App Store called Plot) meant to read .csv and matlab .mdf files, parse and optimise the data to be able to deal with large amounts of points and then, render the data and draw a 2d visualisation of the data points, using a open source framework called CorePlot that’s maintained by Google.\n\nNative iOS Application for stmaryroyaloak.org school site. The idea was to, for different user profiles, give the ability to access details about the students and teachers, register and show the attendances, see the classes summaries and plans, private messaging between users, and a feature similar to a FAQ, where you can ask questions about the lecture subjects.\n\nSimple projects used by a teacher of the same school to teach objective-c programming to his students, from implementing a simple table view, to deal with the camera and audio to take photos or record. Later on, i’ve divided the code into separate projects, to show how the students could implement some of the features of the native app. and play with their school private webservice API.",
+        },
+        {
+            "id": 3,
+            "companyName": "Symmetric",
+            "companyLocation": "Sydney, Australia (remote through elance)",
+            "role": "iOS Developer",
+            "startDate": "12-2012",
+            "endDate": "11-2012",
+            "jobDescription": "Application for iPad made as a tool to help civil engineers teams communicate the details of a project with each other while they’re on the field.\nIn relation to a theme (usually construction related plans), it got to show the details of a selected structure, and allow interacting with it. On this interaction, is possible to see and edit the mock-up plans, with revision history, it got to read questions and answer to them if wanted, from a private webservice, among other simple features. It could take pictures about the structure and show previously taken pictures. All this got to be synchronised in real time with all devices connected to the server, and in the case of no data connection available, save the changes and content for offline use.\nI was working with two other members, one responsible for the backoffice and webservice layer, and one responsible for the frontoffice layer of their website.\nContribution: implement the internal DB in CoreData, network related stuff including uploading the pictures taken and show the current progress, as by that time, there wasn’t any good open source projects that implemented this behaviour… design and implementation of the UI, do the model data structure and communication related code to be paired with the backoffice server layer and do the webservice integration, and core location integration. The time consuming part was taking care of the edition of the mock-up plans, with several improvements that needed to be made every week.",
+        },
+        {
+            "id": 2,
+            "companyName": "Personal Project",
+            "companyLocation": "Portugal",
+            "role": "iOS and macOS Developer",
+            "startDate": "06-2011",
+            "endDate": "04-2011",
+            "jobDescription": "Full development of an iOS application and subsequent submission to the AppStore\nDesign of the entire cycle of application development, from the functional and technical analysis, technical design, development, testing and documentation.\nThe application is called “Sueca”, in which is possible to play a game of cards with the same name.\nThis game is well known and frequently played on Portugal, Brazil and Angola. Was submitted in July 2011 and is for sale on the AppStore.",
+        },
+        {
+            "id": 1,
+            "companyName": "Multiple clients",
+            "companyLocation": "Portugal",
+            "role": "Web Developer",
+            "startDate": "01-2006",
+            "endDate": "07-2013",
+            "jobDescription": "Website for the candidacy for city mayor of Fafe, José Ribeiro (http://www.joseribeiro2009.com)\nWebsite for the Portuguese socialist party headquarters in Fafe (http://www.psfafe.com)\nWebsite for a nightclub called Dali Club in Amarante, Portugal (http://www.dali-club.net)\nWebsite for the Electrical Engineer called André Salvador (http://www.andresalvador.com)\nWebsite for the Engineering Projects Atelier called Batista Maia Atelier (http://www.batistamaia.com)\n",
+        },
+    ]
+}

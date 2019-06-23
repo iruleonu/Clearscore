@@ -1,0 +1,6 @@
+# App specific
+
+
+# Testing
+github "MakeAWishFoundation/SwiftyMocky"
+github "uber/ios-snapshot-test-case" "6.0.0"

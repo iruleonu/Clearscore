@@ -9,6 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainScreenViewController" customModule="Clearscore" customModuleProvider="target">
             <connections>
+                <outlet property="circularScoreView" destination="V5s-Cm-ugf" id="3lY-bT-f4i"/>
+                <outlet property="loadingView" destination="e3i-RI-pyC" id="Z6D-Pn-rlx"/>
+                <outlet property="maximumScoreLabel" destination="Kjy-vX-Ef0" id="hoW-4A-zyV"/>
+                <outlet property="scoreLabel" destination="XCo-i6-wPq" id="QvZ-BR-uWu"/>
                 <outlet property="view" destination="iN0-l3-epB" id="DIg-Nz-CgH"/>
             </connections>
         </placeholder>
@@ -16,7 +20,71 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXA-M5-W6n" userLabel="Circular Score Container">
+                    <rect key="frame" x="41.5" y="287.5" width="331" height="331"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5s-Cm-ugf" userLabel="Circle View" customClass="CircleView" customModule="Clearscore" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="331" height="331"/>
+                            <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your credit score is" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmB-2D-St7" userLabel="Credit score is Static Label">
+                            <rect key="frame" x="92" y="113.5" width="147" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCo-i6-wPq" userLabel="credit score label">
+                            <rect key="frame" x="159.5" y="154.5" width="15" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="out of 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjy-vX-Ef0" userLabel="Maximum score Label">
+                            <rect key="frame" x="135.5" y="196.5" width="60" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="V5s-Cm-ugf" secondAttribute="bottom" id="D8K-XH-PJ3"/>
+                        <constraint firstItem="cmB-2D-St7" firstAttribute="centerX" secondItem="ZXA-M5-W6n" secondAttribute="centerX" id="IVs-Dl-en5"/>
+                        <constraint firstItem="V5s-Cm-ugf" firstAttribute="leading" secondItem="ZXA-M5-W6n" secondAttribute="leading" id="PFz-mX-beQ"/>
+                        <constraint firstItem="Kjy-vX-Ef0" firstAttribute="centerY" secondItem="ZXA-M5-W6n" secondAttribute="centerY" multiplier="1.25" id="Pvi-zX-bV1"/>
+                        <constraint firstItem="Kjy-vX-Ef0" firstAttribute="centerX" secondItem="ZXA-M5-W6n" secondAttribute="centerX" id="Xel-CB-HZl"/>
+                        <constraint firstItem="cmB-2D-St7" firstAttribute="centerY" secondItem="ZXA-M5-W6n" secondAttribute="centerY" multiplier="0.75" id="ZZE-S5-t7i"/>
+                        <constraint firstAttribute="width" secondItem="ZXA-M5-W6n" secondAttribute="height" multiplier="1:1" id="cgB-6b-gui"/>
+                        <constraint firstItem="V5s-Cm-ugf" firstAttribute="top" secondItem="ZXA-M5-W6n" secondAttribute="top" id="hyg-Ee-agD"/>
+                        <constraint firstAttribute="trailing" secondItem="V5s-Cm-ugf" secondAttribute="trailing" id="l8I-Vg-5AX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3i-RI-pyC" userLabel="Loading view">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Jkw-0i-Qyh">
+                            <rect key="frame" x="197" y="399" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Jkw-0i-Qyh" firstAttribute="centerY" secondItem="e3i-RI-pyC" secondAttribute="centerY" id="79a-qS-fnD"/>
+                        <constraint firstItem="Jkw-0i-Qyh" firstAttribute="centerX" secondItem="e3i-RI-pyC" secondAttribute="centerX" id="9fu-GT-jA0"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZXA-M5-W6n" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="39e-cD-ppO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="e3i-RI-pyC" secondAttribute="bottom" id="EWp-g4-FDc"/>
+                <constraint firstItem="ZXA-M5-W6n" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="FOT-q2-7HI"/>
+                <constraint firstItem="e3i-RI-pyC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QKf-WN-mUb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="e3i-RI-pyC" secondAttribute="trailing" id="Qcq-Dl-gaP"/>
+                <constraint firstItem="ZXA-M5-W6n" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="h88-Il-rbU"/>
+                <constraint firstItem="e3i-RI-pyC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sGA-Qx-Svb"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="136" y="123"/>
         </view>

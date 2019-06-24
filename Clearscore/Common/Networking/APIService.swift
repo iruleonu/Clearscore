@@ -54,8 +54,15 @@ protocol ServerConfigProtocol: APIBaseUrlProtocol {
 struct ServerConfig: ServerConfigProtocol {
     var apiBaseUrl: URL
     
-    init(apiBaseUrl: String = NSObject.APIBaseUrl ?? "") {
-        self.apiBaseUrl = URL(string: apiBaseUrl)!
+    init(apiBaseUrl: String? = NSObject.APIBaseUrl) {
+        let baseUrl: String
+        if let apiBaseUrl = apiBaseUrl, !apiBaseUrl.isEmpty {
+            baseUrl = apiBaseUrl
+        } else {
+            baseUrl = "fake"
+        }
+        
+        self.apiBaseUrl = URL(string: baseUrl)!
     }
 }
 

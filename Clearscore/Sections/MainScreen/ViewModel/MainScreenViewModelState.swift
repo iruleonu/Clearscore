@@ -14,7 +14,7 @@ final class MainScreenViewModelState {
         var status: Status
     }
     
-    enum Status {
+    enum Status: Equatable {
         case loading
         case idle
         case failed(String)

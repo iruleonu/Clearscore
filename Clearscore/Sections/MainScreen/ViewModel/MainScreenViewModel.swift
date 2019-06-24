@@ -58,6 +58,30 @@ final class MainScreenViewModelImpl: MainScreenViewModel, MainScreenViewModelInp
         // Do nothing
     }
     
+    static func calculateDoughtnutProgress(forCredit: Credit) -> Float {
+        let currentScore = forCredit.creditReportInfo.score
+        let maximumScore = forCredit.creditReportInfo.maximumScore
+        let progress = Float(currentScore / maximumScore)
+        
+        if progress >= 1.0 {
+            return 1.0
+        }
+        
+        if progress <= 0 {
+            return 0.0
+        }
+        
+        return progress
+    }
+    
+    static func getScoreText(forCredit: Credit) -> String {
+        return "\(forCredit.creditReportInfo.score)"
+    }
+    
+    static func getMaximumScoreText(forCredit: Credit) -> String {
+        return "out of \(forCredit.creditReportInfo.maximumScore)"
+    }
+    
     private func fetchCredit() {
         cancellable = apiService.fetchCredit()
             .sink(receiveCompletion: { [weak self] completion in
@@ -68,7 +92,7 @@ final class MainScreenViewModelImpl: MainScreenViewModel, MainScreenViewModelInp
                     self.vmStateUpdated.send(self.state)
                     self.showError.send(error.errorDescription)
                 case .finished:
-                    break
+                    self.vmStateUpdated.send(self.state)
                 }
                 }, receiveValue: { [weak self] credit in
                     guard let self = self else { return }

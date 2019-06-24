@@ -20,4 +20,16 @@ class MainScreenViewModelStateTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+    
+    func testIdleStatusAfterDidLoadEvent() {
+        let asd = MainScreenViewModelState()
+        asd.handleEvent(.didLoad(Credit(creditReportInfo: CreditReportInfo(score: 0, maximumScore: 0))))
+        XCTAssertEqual(asd.state.status, MainScreenViewModelState.Status.idle)
+    }
+    
+    func testFailedStatusAfterDidFailEvent() {
+        let asd = MainScreenViewModelState()
+        asd.handleEvent(.didFail(""))
+        XCTAssertEqual(asd.state.status, MainScreenViewModelState.Status.failed(""))
+    }
 }

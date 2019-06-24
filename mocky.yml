@@ -3,7 +3,7 @@ sources:
 templates:
   - ./Sourcery/Templates
 output:
-  ./IRShowcaseTests
+  ./ClearscoreTests
 args:
   testable:
     - Clearscore
